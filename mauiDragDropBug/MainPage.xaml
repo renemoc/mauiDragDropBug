@@ -1,0 +1,102 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="mauiDragDropBug.MainPage">
+
+    <Grid ColumnDefinitions="2*,2*">
+        <ScrollView Grid.Column="0">
+            <VerticalStackLayout VerticalOptions="Center" Margin="10" Spacing="10">
+                <Border HeightRequest="300" WidthRequest="300">
+                    <Image Source="dotnet_bot.png" Margin="20">
+                        <Image.GestureRecognizers>
+                            <DragGestureRecognizer CanDrag="True" DragStarting="OnDragStarting" />
+                        </Image.GestureRecognizers>
+                    </Image>
+                </Border>
+                <Border HeightRequest="300" WidthRequest="300">
+                    <Image Source="dotnet_bot.png" Margin="20">
+                        <Image.GestureRecognizers>
+                            <DragGestureRecognizer CanDrag="True" DragStarting="OnDragStarting" />
+                        </Image.GestureRecognizers>
+                    </Image>
+                </Border>
+                <Border HeightRequest="300" WidthRequest="300">
+                    <Image Source="dotnet_bot.png" Margin="20">
+                        <Image.GestureRecognizers>
+                            <DragGestureRecognizer CanDrag="True" DragStarting="OnDragStarting" />
+                        </Image.GestureRecognizers>
+                    </Image>
+                </Border>
+                <Border HeightRequest="300" WidthRequest="300">
+                    <Image Source="dotnet_bot.png" Margin="20">
+                        <Image.GestureRecognizers>
+                            <DragGestureRecognizer CanDrag="True" DragStarting="OnDragStarting" />
+                        </Image.GestureRecognizers>
+                    </Image>
+                </Border>
+                <Border HeightRequest="300" WidthRequest="300">
+                    <Image Source="dotnet_bot.png" Margin="20">
+                        <Image.GestureRecognizers>
+                            <DragGestureRecognizer CanDrag="True" DragStarting="OnDragStarting" />
+                        </Image.GestureRecognizers>
+                    </Image>
+                </Border>
+                <Border HeightRequest="300" WidthRequest="300">
+                    <Image Source="dotnet_bot.png" Margin="20">
+                        <Image.GestureRecognizers>
+                            <DragGestureRecognizer CanDrag="True" DragStarting="OnDragStarting" />
+                        </Image.GestureRecognizers>
+                    </Image>
+                </Border>
+            </VerticalStackLayout>
+        </ScrollView>
+
+        <ScrollView Grid.Column="1">
+            <VerticalStackLayout VerticalOptions="Center" Margin="10" Spacing="10">
+                <Border HeightRequest="300" WidthRequest="300">
+                    <Image Source="empty.png" Margin="20">
+                        <Image.GestureRecognizers>
+                            <DropGestureRecognizer AllowDrop="True" Drop="OnDrop"/>
+                        </Image.GestureRecognizers>
+                    </Image>
+                </Border>
+                <Border HeightRequest="300" WidthRequest="300">
+                    <Image Source="empty.png" Margin="20">
+                        <Image.GestureRecognizers>
+                            <DropGestureRecognizer AllowDrop="True" Drop="OnDrop"/>
+                        </Image.GestureRecognizers>
+                    </Image>
+                </Border>
+                <Border HeightRequest="300" WidthRequest="300">
+                    <Image Source="empty.png" Margin="20">
+                        <Image.GestureRecognizers>
+                            <DropGestureRecognizer AllowDrop="True" Drop="OnDrop"/>
+                        </Image.GestureRecognizers>
+                    </Image>
+                </Border>
+                <Border HeightRequest="300" WidthRequest="300">
+                    <Image Source="empty.png" Margin="20">
+                        <Image.GestureRecognizers>
+                            <DropGestureRecognizer AllowDrop="True" Drop="OnDrop"/>
+                        </Image.GestureRecognizers>
+                    </Image>
+                </Border>
+                <Border HeightRequest="300" WidthRequest="300">
+                    <Image Source="empty.png" Margin="20">
+                        <Image.GestureRecognizers>
+                            <DropGestureRecognizer AllowDrop="True" Drop="OnDrop"/>
+                        </Image.GestureRecognizers>
+                    </Image>
+                </Border>
+                <Border HeightRequest="300" WidthRequest="300">
+                    <Image Source="empty.png" Margin="20">
+                        <Image.GestureRecognizers>
+                            <DropGestureRecognizer AllowDrop="True" Drop="OnDrop"/>
+                        </Image.GestureRecognizers>
+                    </Image>
+                </Border>
+            </VerticalStackLayout>
+        </ScrollView>
+    </Grid>
+
+</ContentPage>
